@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <style>
+        a {
+          text-decoration: none;
+        }
+      </style>
+      
+    <header>
+        <div class="header_wrapper">
+            <div class="site_logo">
+                <img src="../IMAGES/instagram.png" alt="instagram" width="150" height="150">
+            </div>
+
+            <div class="cite_name">
+                <h1 id="site_name">Instagram</h1>
+            </div>
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+        <div class="sign_in">
+            <form name="sign_in" action="formDate.php" method="POST">
+                <p><label for="email">E-Mail *</label></p>
+                <p><input type="email" name="Email" id="email" required autocomplete="on" placeholder="Введите свой E-mail"></p>
+
+                <p><label for="password">Пароль *</label></p>
+                <p><input type="password" name="Password" id="password" required placeholder="Введите ваш пароль"></p>
+
+                <p><input type="reset" name="reset" value="Очистить"> <input type="submit" value="Отправить"></p>
+            </form>
+        </div>
+
+        <br>
+
+        <p><a href="index2.html">Регистрация</a></p>
+    </main>
+</body>
+</html>
