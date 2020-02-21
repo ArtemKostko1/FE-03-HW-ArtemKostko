@@ -1,9 +1,19 @@
+.wrapper{
+    width: 210mm;
+    height: 297mm;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20mm 10mm 20mm 30mm;
+    border: 1px solid black;
+}
+
 .name_institution{
     text-align: center;
     font-weight: 700;
 }
 
 .subject{
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -13,13 +23,15 @@
 }
 
 .student{
-    text-align: right;
+    margin-top: 250px;
+    margin-left: 500px;
 }
 
 .year{
+    margin-top: 370px;
     text-align: center;
 }
 
-.em{
-
+.em1{
+    text-decoration: underline;
 }
