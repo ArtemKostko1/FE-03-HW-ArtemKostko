@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,8 +28,8 @@
     <br>
 
     <main>
-      <div class="sign_up_wrapper">
-        <form class="sign_up" name="sign_up" action="feed.html" method="GET">
+      <div class="sign_up">
+        <form name="sign_up" id="sign_up">
           <p><label for="user_name">Имя *</label></p>
           <p>
             <input type="text" name="user_name" id="user_name" required autocomplete="on" placeholder="Введите ваше имя"/>
@@ -48,7 +47,7 @@
 
           <p><label for="password confirmation">Подтверждение пароля *</label></p>         
           <p>
-            <input type="password" name="Password confirmation" id="password confirmation" required placeholder="Повторите ваш пароль" onchange="checkPass()" />
+            <input type="password" name="Password confirmation" id="password_confirmation" required placeholder="Повторите ваш пароль" onchange ="checkPass()"/>
               <b style="color: red" id="info"></b>
           </p>
 
@@ -74,9 +73,19 @@
     <script>
       function checkPass ()
       {
-      with (document)
-      getElementById ('info').innerHTML = (getElementById ('password').value != getElementById ('password confirmation').value) ?
-         'Пароли не совпадают!' : '✔';
+        var pass1 = document.querySelector('#password').value;
+        var pass2 = document.querySelector('#password_confirmation').value;
+
+        if(pass1 === pass2)
+        {
+          document.getElementById ('info').innerHTML = "✔";
+          document.getElementById ('sign_up').action = "./feed.html";
+        }
+        else
+        {
+          document.getElementById ('info').innerHTML = "Пароли не совпадают!";
+          return false;
+        }
       }
   </script>
   
