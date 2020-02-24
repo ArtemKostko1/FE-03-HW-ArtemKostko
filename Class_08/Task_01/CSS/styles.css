@@ -5,6 +5,9 @@
     margin-right: auto;
     padding: 20mm 10mm 20mm 30mm;
     border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    line-height: 0.5;
 }
 
 .name_institution{
@@ -24,11 +27,11 @@
 
 .student{
     margin-top: 250px;
-    margin-left: 500px;
+    margin-left: 350px;
 }
 
 .year{
-    margin-top: 370px;
+    margin-top: 280px;
     text-align: center;
 }
 
