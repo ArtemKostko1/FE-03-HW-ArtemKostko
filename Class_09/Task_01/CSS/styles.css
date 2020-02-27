@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.loading_wrapper{
+    position: relative;
+    width: 400px;
+    height: 250px;
+}
+
+.loading_border{
+    margin: 115px 25px;
+    width: 350px;
+    height: 20px;
+    border: 1px solid #9e9eff;
+}
+
+.loading_panel{
+    width: 240px;
+    height: 20px;
+    background-color: #9999ff;
+}
+
+.loading_percent{
+    position: absolute;
+    left: 200px;
+    font-size: 10pt;
+}
+
+.modal_window{
+    position: relative;
+    left: 550px;
+    bottom: 365px;
+    width: 400px;
+    height: 250px;
+    border: 7px solid #757575;
+}
+
+.exit{
+    position: absolute;
+    left: 380px;
+}
+
+.modal_header{
+    position: relative;
+    margin: 27.7777778px;
+}
+.header_text{
+    font-size: 14pt;
+}
+
+.modal_text{
+    position: relative;
+    margin: 27.7777778px;
+}
+.text{
+    font-size: 12pt;
+}
