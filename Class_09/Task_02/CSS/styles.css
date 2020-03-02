@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.modal_window{
+    position: relative;
+
+    margin:10em auto;
+
+    width: 400px;
+    height: 250px;
+
+    border: 7px solid #757575;
+}
+
+.exit{
+    position: absolute;
+
+    left: 375px;
+
+    margin: 5px;
+}
+
+.button_exit{
+    background-color: transparent;
+    border: 0;
+
+    font-size: 20px;
+    opacity: .5;
+}
+
+.modal_header{
+    position: relative;
+
+    width: 400px;
+    height: 83.3px;
+}
+.header_text{
+    position: absolute;
+
+    font-size: 14pt;
+
+    margin: 30.6666666px;
+}
+
+.modal_main{
+    position: relative;
+
+    width: 400px;
+    height: 83.3px;
+}
+.main_text{
+    position: absolute;
+
+    font-size: 12pt;
+
+    margin: 30.6666666px;
+}
+
+.modal_close{
+    position: relative;
+
+    width: 400px;
+    height: 83.3px;
+}
+.button_close{
+    position: absolute;
+
+    width: 70px;
+    height: 40px;
+    
+    left: 315px;
+    top: 25px;
+}
