@@ -4,23 +4,24 @@
 }
 
 .modal_wrapper{
-    position: absolute;
+    position: relative;
 
     background-color: rgb(112, 112, 112, 0.3);
 
     z-index: -1;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .modal_window{
-    position: relative;
+    position: absolute;
 
-    margin:10em auto;
+    width: 30%;
+    height: 40%;
 
-    width: 400px;
-    height: 250px;
+    left: 35%;
+    top: 30%;
 
     z-index: 1;
 
@@ -29,12 +30,25 @@
     border-radius: 20px;
 }
 
+.modal_header{
+    position: relative;
+
+    width: 100%;
+    height: 33.3%;
+}
+.header_text{
+    position: absolute;
+
+    font-size: 14pt;
+
+    margin: 9%;
+}
+
 .exit{
     position: absolute;
 
-    left: 375px;
-
-    margin: 5px;
+    left: 93%;
+    top: 3%;
 }
 .button_exit{
     background-color: transparent;
@@ -44,46 +58,32 @@
     opacity: .5;
 }
 
-.modal_header{
-    position: relative;
-
-    width: 400px;
-    height: 83.3px;
-}
-.header_text{
-    position: absolute;
-
-    font-size: 14pt;
-
-    margin: 30.6666666px;
-}
-
 .modal_main{
     position: relative;
 
-    width: 400px;
-    height: 83.3px;
+    width: 100%;
+    height: 33.3%;
 }
 .main_text{
     position: absolute;
 
     font-size: 12pt;
 
-    margin: 30.6666666px;
+    margin: 9%;
 }
 
 .modal_close{
     position: relative;
 
-    width: 400px;
-    height: 83.3px;
+    width: 100%;
+    height: 33.3%;
 }
 .button_close{
     position: absolute;
 
-    width: 70px;
-    height: 40px;
+    width: 20%;
+    height: 40%;
     
-    left: 315px;
-    top: 25px;
+    left: 75%;
+    top: 33.35%;
 }
