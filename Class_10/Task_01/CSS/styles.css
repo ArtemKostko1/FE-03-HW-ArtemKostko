@@ -2,3 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
+header{
+    width: 100vw;
+    height: 125px;
+}
+
+.shop_name{
+    position: relative;
+
+    width: ;
+
+    margin: 0 auto;
+}
+
+#shop_name{
+    font-size: 36pt;
+    font-weight: 700;
+}
