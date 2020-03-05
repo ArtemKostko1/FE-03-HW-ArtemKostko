@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(https://habrastorage.org/files/42e/d6b/a3b/42ed6ba3b1c34698880272577a2a06dc.jpg);
+    background-image: url(../IMAGES/background.jpg);
 }
 
 ul, a{
@@ -37,9 +37,9 @@ ul, a{
 .nav>ul li a{
     display: block;
 
-    padding: 10px 60px;
-    width: 250px;
-    font-size: 12pt;
+    padding: 10px 30px;
+    min-width: 200px;
+    font-size: 11pt;
     text-transform: uppercase;
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#faf4ff+0,faf4ff+5,f5eaff+75,f5eaff+100 */
@@ -56,7 +56,8 @@ ul, a{
 
 .nav > ul li{
     position: relative;
-    border-right: 1px solid rgb(90, 90, 90);
+    /* border-right: 1px solid rgb(90, 90, 90); */
+    text-align: center;
 }
 
 .nav > ul li > a i.fa{
@@ -64,15 +65,7 @@ ul, a{
     
     top: 10px;
     left: 10px;
-    font-size: 18pt;
-}
-
-.nav > ul li:first-child{
-    border-left: 1px solid rgb(90, 90, 90);
-}
-
-.nav > ul li:last-child{
-    border-right: 1px solid rgb(90, 90, 90);
+    font-size: 14pt;
 }
 
 .nav li a:hover{
@@ -92,23 +85,20 @@ ul, a{
 
 .nav li ul{
     position: absolute;
-    min-width: 250px;
-
     display: none;
-}
 
-.nav li > ul li{
-    border: 1px solid rgb(90, 90, 90);
+    z-index: 100;
 }
 
 .nav li > ul li a{
-    padding: 10px 60px;
+    min-width: 200px;
+    padding: 10px 29.5px;
 
     text-transform: none;
 
     background-color: rgba(250, 245, 255, 0.7);
     color: rgb(167, 35, 255);
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .nav li > ul li ul{
@@ -118,5 +108,36 @@ ul, a{
 }
 
 .nav li:hover > ul{
-    display:  block;
+    display: block;
+}
+
+/*Sending order*/
+
+.form_wrapper{
+    position: relative;
+
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.order{
+    text-transform:uppercase;
+    font-size: 20pt;
+}
+
+.contact_info, .delivery{
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+label{
+    font-size: 10pt;
+}
+
+/* .address{
+    display: none;
+} */
+
+.sending_order{
+    display: block;
 }

@@ -29,7 +29,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-desktop"></i>Компьютерная техника</a>
+                        <a href="#"><i class="fa fa-desktop"></i>Техника для кухни</a>
                         <ul>
                             <li><a href="#">Холодильники</a></li>
                             <li><a href="#">Кухонные плиты</a></li>
@@ -41,7 +41,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-utensils"></i>Техника для кухни</a>
+                        <a href="#"><i class="fa fa-utensils"></i>Компьютерная техника</a>
                         <ul>
                             <li><a href="#">Ноутбуки</a></li>
                             <li><a href="#">Планшеты</a></li>
@@ -59,7 +59,37 @@
     </header>
 
     <main>
+        <div class="form_wrapper">
+            <span class="order">Оформите заказ</span>
 
+            <form class="sending_order">
+                <p><span< class="contact_info">Заполните контактную информацию</span></p>
+
+                <label for="user_name">Имя</label>
+                <p><input type="text" name="User_name" id="user_name" required size="30" maxlength="30"></p>
+                
+                <label for="user_tel">Телефон</label>
+                <p><input type="tel" name="User_tel" id="user_tel" required size="30" maxlength="30"></p>
+                
+                <label for="user_email">E-mail</label>
+                <p><input type="email" name="User_email" id="user_email" required size="30" maxlength="30"></p>
+
+                
+                <p><span class="delivery">Выберите способ доставки</span></p>
+
+                <p><input type="radio" name="Choice_delivery" id="choice_delivery_1">
+                <label for="choice_delivery_1">Самовывоз</label>
+
+                <div class="address">
+                    <address>Ул.Немига, дом 5</address>
+                    <iframe src="https://yandex.by/map-widget/v1/-/CKUjQ-OS" width="350" height="250" allowfullscreen></iframe>
+                </div><p>
+
+                <p><input type="radio" name="Choice_delivery" id="choice_delivery_2">
+                <label for="choice_delivery_2">Доставка курьером</label></p>
+
+            </form>
+        </div>
     </main>
 </body>
 </html>
