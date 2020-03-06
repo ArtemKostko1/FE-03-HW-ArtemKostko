@@ -144,3 +144,10 @@ input[id="pickup"]:checked~.pickup_address{
 input[id="courier_delivery"]:checked~.courier_delivery_address{
     display: block;
 }
+
+footer{
+    position: relative;
+
+    margin-left: 2%;
+    margin-top: 2%;
+}
