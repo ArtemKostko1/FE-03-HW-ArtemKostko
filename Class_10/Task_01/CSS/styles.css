@@ -120,12 +120,12 @@ ul, a{
     margin-top: 2%;
 }
 
-.order{
+.form_wrapper > span{
     text-transform:uppercase;
     font-size: 20pt;
 }
 
-.contact_info, .delivery{
+.sending_order > span{
     font-size: 10pt;
     font-weight: 700;
 }
@@ -134,10 +134,13 @@ label{
     font-size: 10pt;
 }
 
-/* .address{
+.pickup_address, .courier_delivery_address{
     display: none;
-} */
+}
 
-.sending_order{
+input[id="pickup"]:checked~.pickup_address{
+    display: block;
+}
+input[id="courier_delivery"]:checked~.courier_delivery_address{
     display: block;
 }

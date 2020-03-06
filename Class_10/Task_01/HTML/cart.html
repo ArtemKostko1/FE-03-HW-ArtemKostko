@@ -60,12 +60,12 @@
 
     <main>
         <div class="form_wrapper">
-            <span class="order">Оформите заказ</span>
+            <span>Оформите заказ</span>
 
             <form class="sending_order">
-                <p><span< class="contact_info">Заполните контактную информацию</span></p>
+                <span>Заполните контактную информацию</span>
 
-                <label for="user_name">Имя</label>
+                <p><label for="user_name">Имя</label></p>
                 <p><input type="text" name="User_name" id="user_name" required size="30" maxlength="30"></p>
                 
                 <label for="user_tel">Телефон</label>
@@ -75,19 +75,23 @@
                 <p><input type="email" name="User_email" id="user_email" required size="30" maxlength="30"></p>
 
                 
-                <p><span class="delivery">Выберите способ доставки</span></p>
+                <span>Выберите способ доставки</span>
 
-                <p><input type="radio" name="Choice_delivery" id="choice_delivery_1">
-                <label for="choice_delivery_1">Самовывоз</label>
+                <p><label for="pickup">Самовывоз</label></p>
+                <input type="radio" name="delivery_choice" id="pickup">
+                
 
-                <div class="address">
+                <div class="pickup_address">
                     <address>Ул.Немига, дом 5</address>
                     <iframe src="https://yandex.by/map-widget/v1/-/CKUjQ-OS" width="350" height="250" allowfullscreen></iframe>
-                </div><p>
+                </div>
 
-                <p><input type="radio" name="Choice_delivery" id="choice_delivery_2">
-                <label for="choice_delivery_2">Доставка курьером</label></p>
+                <p><label for="courier_delivery">Доставка курьером</label></p>
+                <input type="radio" name="delivery_choice" id="courier_delivery">
 
+                <div class="courier_delivery_address">
+                    <input type="text" name="Courier_delivery_address" id="courier_delivery_address" placeholder="Адрес доставки" required size="30" maxlength="30" autocomplete="on">
+                </div>
             </form>
         </div>
     </main>
