@@ -3,10 +3,10 @@
   padding: 0;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-
-  background: url('../IMAGES/sky.jpg'), url('../IMAGES/sea.jpg'), url('../IMAGES/sun.png');
-  background-repeat: repeat;
+.background{
+  background-image: url('../IMAGES/sun.png'), url('../IMAGES/sea.jpg'), url('../IMAGES/sky.jpg');
+  background-position: 3% 5%, 0% 100%, 0% 100%;
+  background-size: 10%, 100%, 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
