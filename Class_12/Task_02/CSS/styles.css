@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fa{
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    font-size: 40pt;
+
+    color: silver;
+}
+
+.fa:hover{
+    color: blue;
+}
+.fa:active{
+    color: red;
+}
+.fa:visited{
+    color: rgba(255, 0, 0, 0.3);
+}

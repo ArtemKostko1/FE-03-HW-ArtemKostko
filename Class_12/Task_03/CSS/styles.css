@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.order_wrapper{
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    left: 47%;
+    top: 42.5%;
+
+    padding: 1%;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
