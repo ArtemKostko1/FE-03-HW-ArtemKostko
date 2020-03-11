@@ -9,11 +9,41 @@
     width: 150px;
     height: 150px;
 
-    left: 47%;
-    top: 42.5%;
-
-    padding: 1%;
+    padding: 15px;
 
     border: 1px solid black;
     border-radius: 20px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    padding-left: 15px;
+}
+
+label::before{
+    content: '';
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #2196F3;
+    border-radius: 50%;
+
+    vertical-align: middle;
+
+    margin-left: -10px;
+    margin-right: 10px;
+
+    transition: all .3s;
+}
+
+input[type="checkbox"]:checked + label::before{
+    background-image: url('../IMAGES/correct.png');
+    background-position: center;
+    background-size: 130%;
 }
