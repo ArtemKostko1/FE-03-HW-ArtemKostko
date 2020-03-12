@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.fa{
+a .fa{
     position: absolute;
 
     left: 50%;
@@ -14,12 +14,12 @@
     color: silver;
 }
 
-.fa:hover{
+a .fa:hover{
     color: blue;
 }
-.fa:active{
+a .fa:visited{
     color: red;
 }
-.fa:visited{
+a .fa:visited a .fa:hover{
     color: rgba(255, 0, 0, 0.3);
 }
