@@ -16,12 +16,16 @@ body {
 }
 
 .header_wrapper {
+    position: fixed;
+
+    top: 0;
+
     width: 100%;
     height: auto; 
 
     background-color: rgba(71, 55, 25, 0.7);
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .shop_logo {
@@ -40,7 +44,7 @@ body {
 .header_menu {
     float: left;
     height: auto;
-    width: 645px;
+    width: 741px;
 }
 .header_menu ul li {
     float: left;
@@ -48,7 +52,7 @@ body {
 }
 .header_menu ul li a {
     display: block;
-    width: 215px;
+    width: 247px;
     color: white;
     height: auto;
     padding-top: 25px;
@@ -107,11 +111,11 @@ body {
 .photo1 {
     width: 720px;
     height: auto;
-    margin: 10px auto;
+    margin: 64px auto;
 }
 
 .photo2 {
     width: 720px;
     height: auto;
-    margin: 20px auto;
+    margin: 10px auto;
 }

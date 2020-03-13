@@ -14,13 +14,14 @@ a > .fa{
     color: silver;
 }
 
-a > .fa:hover{
+a > .fa:hover {
     color: blue;
 }
-a > .fa:visited{
-    color: red;
+a > .fa:active{
+    color: green;
+    opacity: .5;
 }
-a > .fa:visited:hover{
-    /* color: rgba(255, 0, 0, 0.3); */
-    opacity: 0.5;
-}
+/* a:visited > .fa{
+   color: red;
+   opacity: .5;
+} */
