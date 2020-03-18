@@ -39,7 +39,7 @@
     display: none;
 }
 
-@media (max-width: 540px){
+@media (max-width: 540px) {
     .header_menu_desctop{
         display: none;
     }

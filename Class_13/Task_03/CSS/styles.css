@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper {
+    width: 100vw;
+    height: 790px;
+
+    background-image: url('https://static.tildacdn.com/tild6535-3035-4530-b630-383061373964/kct-2019.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
