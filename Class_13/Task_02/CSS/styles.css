@@ -9,7 +9,7 @@
     width: 100vw;
     height: 50px;
 
-    background-color: rgba(128, 128, 128, 0.4);
+    background-color: rgba(218, 246, 255, 0.356);
 }
 
 .header_menu_desctop {
@@ -31,53 +31,80 @@
 }
 
 .header_menu_desctop > .item:hover{
-    background-color: gray;
+    background-color: rgb(169, 234, 255);
+    border-radius: 15px;
 }
 
-/* .header_menu_mobile{
-    width: 50px;
-    height: auto;
-}
-
-.fa{
-    padding: 0.5rem;
-
-    color: rgb(0, 195, 255);
-    font-size: 28pt;
-}
-
-.header_menu_mobile a:hover .fa{
-    background-color: rgba(255, 255, 255, 0.884);
-    border-radius: 10px;
-}
-
-.header_menu_mobile .expanded_menu {
+.header_menu_mobile{
     display: none;
 }
 
-.header_menu_mobile:hover > .expanded_menu {
-    position: absolute;
-    display: block;
+@media (max-width: 540px){
+    .header_menu_desctop{
+        display: none;
+    }
 
-    width: 350px;
-    height: 400px;
+    .header_menu_mobile{
+        display: block;
+    }
 
-    background-color: rgba(218, 246, 255, 0.356);
-    border-radius: 20px;
+    .header-wrapper {
+        display: flex;
+    
+        width: 100vw;
+        height: 50px;
+    
+        background-color: rgba(218, 246, 255, 0.356);
+    }
+
+    .header_menu_mobile{
+        width: 50px;
+        height: auto;
+    }
+
+    .fa{
+        padding: 0.5rem;
+
+        color: rgb(0, 195, 255);
+        font-size: 28pt;
+    }
+
+    .header_menu_mobile a:hover .fa{
+        background-color: rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+    }
+
+    .header_menu_mobile .expanded_menu {
+        display: none;
+    }
+
+    .header_menu_mobile:hover > .expanded_menu {
+        position: absolute;
+        display: block;
+
+        width: 150px;
+        height: 200px;
+
+        background-color: rgba(218, 246, 255, 0.3);
+        border-radius: 20px;
+    }
+
+    .expanded_menu > .item{
+        width: 90%;
+        height: 33.3%;
+
+        text-align: center;
+
+        margin: 0 5%;
+    }
+
+    .expanded_menu > .item > p{
+        padding: 1.2em 0;
+    }
+
+    .expanded_menu > .item:hover{
+        background-color: rgb(169, 234, 255);
+        border-radius: 20px;
+    }
 }
-
-.expanded_menu > .item{
-    width: 90%;
-    height: 33.3%;
-
-    margin: 0 5%;
-}
-
-.expanded_menu > .item:first-child{
-    border-bottom: 1px solid black;
-}
-.expanded_menu > .item:last-child{
-    border-top: 1px solid black;
-} */
-
 
