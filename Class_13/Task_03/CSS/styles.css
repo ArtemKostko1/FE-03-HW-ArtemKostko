@@ -22,7 +22,7 @@ a, ul{
     width: 100vw;
     height: 790px;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(45, 45, 45, 0.65);
 }
 
 .header_head-wrapper {
@@ -40,12 +40,12 @@ a, ul{
 }
 
 .header_head_logo span{
-    font-family: Roboto;
-    font-size: 28pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24pt;
     font-weight: 600;
     color: white;
 
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .header_head_menu{
@@ -53,7 +53,7 @@ a, ul{
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 100vw;
 }
 
 .header_head_menu ul{
@@ -67,7 +67,7 @@ a, ul{
 .header_head_menu  a{
     font-size: 13pt;
     font-weight: 600;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     
     color: white;
 }
@@ -80,8 +80,10 @@ a, ul{
     display: flex;
     align-items: center;
 
-    min-width: 335px;
+    min-width: 311px;
     height: auto;
+
+    margin-right: 20px;
 }
 
 .header_head_contacs_tel {
@@ -93,8 +95,8 @@ a, ul{
 
 .header_head_contacs_tel a{
     font-size: 13pt;
-    font-weight: 500;
-    font-family: Roboto;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -103,16 +105,105 @@ a, ul{
 }
 
 .name {
-    width: 70%;
-    line-height: 1.45;
+    display: flex;
     justify-content: center;
+
+    line-height: 1.45;
 }
 
 .name > h1{
-        
-    font-size: 48pt;
+    font-size: 46pt;
     color: white;
-    font-weight: 700;
-    font-family: Roboto;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+
+    width: 869px;
+}
+
+.contant_info {
+    display: flex;
+    justify-content: center;
+}
+
+.contant_info .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.55;
+    text-align: center;
+
+    width: 320px;
+    padding: 80px 45px;
+}
+
+.contant_info .item h1 {
+    color: #fac832;
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+.contant_info .item span{
+    color: white;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    line-height: 1.45;
+}
+
+.text > h1{
+    font-size: 26pt;
+    color: white;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    width: 650px;
+}
+
+.sign_up {
+    display: flex;
+    justify-content: center;
+
+    width: auto;
+    padding: 50px 0;
+}
+
+.sign_up-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 360px;
+    height: 55px;
+
+    background-color: #ee5555;
+    border-radius: 5px;
+}
+
+.sign_up-wrapper span {
+
+    font-size: 12pt;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.sign_up-wrapper:hover{
+    background-color: white;
+    transition: all .3s;
+}
+
+.sign_up-wrapper:hover > span{
+    color: #ee5555;
+    transition: all .5s;
 }
