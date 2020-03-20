@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-a, ul{
+a, ul {
     text-decoration: none;
     list-style: none;
 }
@@ -12,7 +12,7 @@ a, ul{
     width: 100vw;
     height: 790px;
 
-    background-image: url('https://static.tildacdn.com/tild6535-3035-4530-b630-383061373964/kct-2019.jpg');
+    background-image: url("https://static.tildacdn.com/tild6535-3035-4530-b630-383061373964/kct-2019.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,8 +39,8 @@ a, ul{
     height: auto;
 }
 
-.header_head_logo span{
-    font-family: 'Roboto', sans-serif;
+.header_head_logo span {
+    font-family: "Roboto", sans-serif;
     font-size: 24pt;
     font-weight: 600;
     color: white;
@@ -48,7 +48,7 @@ a, ul{
     margin-left: 50px;
 }
 
-.header_head_menu{
+.header_head_menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,24 +56,26 @@ a, ul{
     width: 100vw;
 }
 
-.header_head_menu ul{
+.header_head_menu ul {
     display: flex;
 }
 
-.header_head_menu li{
+.header_head_menu li {
     padding: 0 20px;
 }
 
-.header_head_menu  a{
+.header_head_menu a {
     font-size: 13pt;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: "Roboto", sans-serif;
+
     color: white;
 }
 
-.header_head_menu  a:hover {
+.header_head_menu a:hover {
     border-bottom: 1px solid white;
+
+    transition: all 1s;
 }
 
 .header_head-header_head_contacs {
@@ -93,14 +95,14 @@ a, ul{
     padding-right: 20px;
 }
 
-.header_head_contacs_tel a{
+.header_head_contacs_tel a {
     font-size: 13pt;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
 }
 
-.header_head_contacs_socialLinks a{
+.header_head_contacs_socialLinks a {
     margin-left: 5px;
 }
 
@@ -111,11 +113,11 @@ a, ul{
     line-height: 1.45;
 }
 
-.name > h1{
+.name > h1 {
     font-size: 46pt;
     color: white;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 
     width: 869px;
@@ -131,7 +133,7 @@ a, ul{
     justify-content: center;
     flex-direction: column;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.55;
     text-align: center;
 
@@ -145,7 +147,7 @@ a, ul{
     font-weight: 600;
 }
 
-.contant_info .item span{
+.contant_info .item span {
     color: white;
     font-size: 12pt;
     font-weight: 500;
@@ -159,11 +161,11 @@ a, ul{
     line-height: 1.45;
 }
 
-.text > h1{
+.text > h1 {
     font-size: 26pt;
     color: white;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 
     width: 650px;
@@ -187,23 +189,17 @@ a, ul{
 
     background-color: #ee5555;
     border-radius: 5px;
-}
-
-.sign_up-wrapper span {
+    border: 0;
 
     font-size: 12pt;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
-
 }
 
-.sign_up-wrapper:hover{
+.sign_up-wrapper:hover {
     background-color: white;
-    transition: all .3s;
-}
-
-.sign_up-wrapper:hover > span{
     color: #ee5555;
-    transition: all .5s;
+
+    transition: all .7s;
 }
