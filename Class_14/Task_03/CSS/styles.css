@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subZero {
+    width: 66px;
+    height: 135px;
+
+    background-image: url('../IMAGES/sheet.jpg');
+}
+
+.subZero {
+    animation: .5s infinite alternate steps(6) subZero;
+}
+
+@keyframes subZero {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}

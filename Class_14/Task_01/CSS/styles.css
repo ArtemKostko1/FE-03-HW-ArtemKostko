@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    position: relative;
+
+    width: 100vw;
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.conteiner > img {
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(0) rotate(0);
+    transition: 3s;
+}
+
+.conteiner:hover img {
+    transform: translate(100vw) rotate(450deg);
+}
