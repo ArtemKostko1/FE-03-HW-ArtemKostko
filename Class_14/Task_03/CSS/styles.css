@@ -18,7 +18,7 @@ body {
     background-image: url('../IMAGES/sheet.jpg');
 }
 
-.subZero {
+.subZero:hover{
     animation: .5s infinite alternate steps(6) subZero;
 }
 
