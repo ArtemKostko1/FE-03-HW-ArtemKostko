@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header_wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: rgba(138, 138, 138, 0.562);
+}
+.header_wrapper .logo_wrapper {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.header_wrapper .logo_wrapper .logo {
+  margin-left: 20px;
+}
+.header_wrapper .logo_wrapper .name {
+  font-family: "Arial", sans-serif;
+  margin-left: 10px;
+}
+.header_wrapper .header_menu {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.header_wrapper .header_menu ul {
+  display: flex;
+  width: 100%;
+}
+.header_wrapper .header_menu ul li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.header_wrapper .header_menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}
+.header_wrapper .header_menu ul li a:hover {
+  background: #646464;
+  color: white;
+  transition: 0.5s;
+}
+
+main .services ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+  justify-content: center;
+  font-size: 16pt;
+}
+main .services ul li:nth-child(1) {
+  background-image: url("../IMAGES/ScreenReplacement.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .services ul li:nth-child(2) {
+  background-image: url("../IMAGES/SpeakerReplacement.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .services ul li:nth-child(3) {
+  background-image: url("../IMAGES/CaseReplacement.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=main.css.map */

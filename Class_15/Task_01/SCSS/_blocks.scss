@@ -1,0 +1,85 @@
+$font_arial: "Arial", sans-serif;
+
+.header_wrapper {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    background: rgba(138, 138, 138, 0.562);
+
+    .logo_wrapper {
+        display: flex;
+
+        width: auto;
+        height: auto;
+
+        align-items: center;
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .name {
+            font-family: $font_arial;
+            margin-left: 10px;
+        }
+    }
+
+    .header_menu{
+        display: flex;
+        height: auto;
+        width: 100%;
+        ul {
+            display: flex;
+            width: 100%;
+            li {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    color: black;
+                    &:hover {
+                        background: rgb(100, 100, 100);
+                        color: white;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .services {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 300px;
+            justify-content: center;
+            font-size: 16pt;
+
+            li:nth-child(1){
+                background-image: url('../IMAGES/ScreenReplacement.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            li:nth-child(2) {
+                background-image: url('../IMAGES/SpeakerReplacement.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            li:nth-child(3) {
+                background-image: url('../IMAGES/CaseReplacement.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
