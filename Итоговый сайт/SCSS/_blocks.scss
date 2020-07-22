@@ -1,0 +1,247 @@
+.main_header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 107px;
+
+  .topHeader_wrapper {
+    display: flex;
+    max-height: 60px;
+    width: 100%;
+
+    .topHeader1 {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      padding-left: 24px;
+    }
+
+    .topHeader2 {
+      display: flex;
+      align-items: center;
+
+      .logoIcon {
+        display: flex;
+
+        svg {
+          height: 30px;
+          width: 198px;
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .topHeader3 {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .topHeader3_containerWrapper {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        .topHeader3_searchContainer {
+          display: inline-block;
+          height: 100%;
+          vertical-align: top;
+          padding-right: 16px;
+
+          .searchWrapper {
+            display: inline-block;
+            position: relative;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+
+            .search_form {
+              position: absolute;
+              right: 0;
+            }
+          }
+        }
+
+        .authorization_wrapper {
+          display: flex;
+          align-items: center;
+          height: 60px;
+          line-height: 60px;
+          cursor: pointer;
+
+          .authorization_Container,
+          .account_tooltip {
+            display: flex;
+
+            .authorization_button {
+              border: 0;
+              background-color: transparent;
+              padding: 0 8px;
+              text-align: center;
+            }
+
+            .authorization_dropdown {
+              visibility: hidden;
+              position: absolute;
+              transform: translate3d(calc(100vw - 205px), 51px, 0px);
+              top: 0;
+              left: 0;
+              width: 200px;
+              height: auto;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              z-index: 5;
+
+              .authorization_dropdown_List {
+                text-align: left;
+
+                .list {
+                  padding-top: 8px;
+                }
+              }
+            }
+          }
+        }
+
+        .authorization_wrapper:hover .authorization_dropdown {
+          visibility: visible;
+        }
+
+        .cart_button {
+          line-height: 1.5;
+          line-height: 60px;
+          height: 60px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          padding: 0 16px;
+          margin: 0;
+          display: flex;
+          vertical-align: middle;
+          position: relative;
+
+          .cart_button_svg {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomHeader_wrapper {
+    width: 100%;
+    align-items: center;
+
+    .bottomHeader_navigationContainer {
+      display: flex;
+      justify-content: center;
+      opacity: 1;
+
+      .bottomHeader_menu_item {
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 8px 4px 16px;
+        margin: 0 8px;
+        z-index: 1;
+
+        &:hover {
+          border-bottom: 1px solid #232323;
+        }
+      }
+
+      .desctopNavigationContainer {
+        visibility: hidden;
+        position: fixed;
+        flex-grow: 1;
+        display: block;
+        height: 454px;
+        width: 100%;
+        opacity: 1;
+        position: fixed;
+        background-color: #fff;
+        left: 0;
+        top: 107px;
+        overflow: hidden;
+        text-align: left;
+
+        .desctopNav {
+          display: block;
+
+          .desktop_navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 24px;
+            margin: 0 auto;
+            max-width: 980px;
+
+            .navColumn {
+              .desctop_navigation_columnHeader {
+                display: block;
+                padding-right: 32px;
+              }
+
+              .desctop_navigation_linkText {
+                cursor: pointer !important;
+              }
+
+              .desctop_navigation_textWrapper {
+                padding-left: 24px;
+                padding-right: 32px;
+
+                .desctop_navigation_navWrapper {
+                  width: 100%;
+
+                  a {
+                    display: block;
+                    margin: 0;
+                    padding: 8px 0;
+
+                    .desctop_navigation_navBadge {
+                      display: inline-block;
+                      position: relative;
+                      top: -6px;
+                      padding-left: 4px;
+                    }
+                  }
+                }
+              }
+            }
+            .desctop_navigation_imageArea {
+              display: flex;
+              justify-content: left;
+              height: 400px;
+              border-left: 1px solid #e5e5e5;
+
+              .desctop_navigation_imageWrapper {
+                padding-left: 32px;
+
+                .image_component {
+                  position: relative;
+                  text-align: center;
+
+                  .img {
+                    object-fit: contain;
+                    object-position: center;
+                    width: auto;
+                    padding-bottom: 8px;
+                    width: auto;
+                  }
+
+                  .desctop_navigation_imageTextFirst {
+                    padding-top: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .bottomHeader_menu_item:hover ~ .desctopNavigationContainer {
+        visibility: visible;
+      }
+    }
+  }
+}
