@@ -61,6 +61,16 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .main_header {
   display: flex;
   flex-flow: row wrap;
@@ -78,6 +88,9 @@ svg:not(:root) {
   flex: 1;
   align-items: center;
   padding-left: 24px;
+}
+.main_header .topHeader_wrapper .topHeader1 a:hover {
+  text-decoration: none;
 }
 .main_header .topHeader_wrapper .topHeader2 {
   display: flex;
@@ -145,6 +158,7 @@ svg:not(:root) {
   left: 0;
   width: 200px;
   height: auto;
+  padding: 8px 16px;
   padding-top: 4px;
   padding-bottom: 4px;
   z-index: 5;
@@ -156,6 +170,7 @@ svg:not(:root) {
 .main_header .topHeader_wrapper .topHeader3 .topHeader3_containerWrapper .authorization_wrapper .authorization_Container .authorization_dropdown .authorization_dropdown_List .list,
 .main_header .topHeader_wrapper .topHeader3 .topHeader3_containerWrapper .authorization_wrapper .account_tooltip .authorization_dropdown .authorization_dropdown_List .list {
   padding-top: 8px;
+  margin: 0;
 }
 .main_header .topHeader_wrapper .topHeader3 .topHeader3_containerWrapper .authorization_wrapper:hover .authorization_dropdown {
   visibility: visible;
@@ -185,7 +200,7 @@ svg:not(:root) {
   justify-content: center;
   opacity: 1;
 }
-.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item {
+.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item > a {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -194,23 +209,27 @@ svg:not(:root) {
   margin: 0 8px;
   z-index: 1;
 }
-.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item:hover {
+.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item > a:hover {
   border-bottom: 1px solid #232323;
+  text-decoration: none;
+}
+.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item:hover .desctopNavigationContainer {
+  visibility: visible;
 }
 .main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .desctopNavigationContainer {
   visibility: hidden;
-  position: fixed;
-  flex-grow: 1;
   display: block;
-  height: 454px;
+  flex-grow: 1;
+  position: fixed;
+  height: 475px;
   width: 100%;
   opacity: 1;
-  position: fixed;
   background-color: #fff;
   left: 0;
   top: 107px;
-  overflow: hidden;
   text-align: left;
+  overflow: hidden;
+  z-index: 5;
 }
 .main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .desctopNavigationContainer .desctopNav {
   display: block;
@@ -219,7 +238,7 @@ svg:not(:root) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 24px;
+  padding: 20px 24px;
   margin: 0 auto;
   max-width: 980px;
 }
@@ -241,6 +260,9 @@ svg:not(:root) {
   display: block;
   margin: 0;
   padding: 8px 0;
+}
+.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .desctopNavigationContainer .desctopNav .desktop_navigation .navColumn .desctop_navigation_textWrapper .desctop_navigation_navWrapper a:hover {
+  text-decoration: underline;
 }
 .main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .desctopNavigationContainer .desctopNav .desktop_navigation .navColumn .desctop_navigation_textWrapper .desctop_navigation_navWrapper a .desctop_navigation_navBadge {
   display: inline-block;
@@ -271,8 +293,81 @@ svg:not(:root) {
 .main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .desctopNavigationContainer .desctopNav .desktop_navigation .desctop_navigation_imageArea .desctop_navigation_imageWrapper .image_component .desctop_navigation_imageTextFirst {
   padding-top: 8px;
 }
-.main_header .bottomHeader_wrapper .bottomHeader_navigationContainer .bottomHeader_menu_item:hover ~ .desctopNavigationContainer {
-  visibility: visible;
+
+.pageContent {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.pageContent .mainContentContainer {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  flex-grow: 2;
+  min-height: 100vh;
+}
+.pageContent .mainContentContainer .mainContent {
+  flex: 1 1;
+}
+.pageContent .mainContentContainer .mainContent .homePage {
+  max-width: 1440px;
+  margin: auto;
+}
+.pageContent .mainContentContainer .mainContent .homePage .corousel_wrapper {
+  margin: 16px 128px 32px 128px;
+}
+.pageContent .mainContentContainer .mainContent .homePage .corousel_wrapper .carousel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery {
+  position: relative;
+  padding: 0px 0px 32px;
+  width: 100%;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery img {
+  width: 100%;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery .image-gallery-section {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery .image-gallery-section .image-gallery-section-description {
+  margin: 8px auto 4px;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery .image-gallery-section .image-gallery-section-button {
+  padding: 16px 0 0;
+  white-space: normal;
+  text-align: center;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery .image-gallery-section .image-gallery-section-button a {
+  display: inline-block;
+  width: auto;
+  height: 48px;
+  margin-right: 0;
+  background-color: #232323;
+  color: #f4f4f4;
+  border: 1px solid transparent;
+  padding: 0 24px;
+}
+.pageContent .mainContentContainer .mainContent .homePage .gallery .image-gallery .image-gallery-section .image-gallery-section-button a:hover {
+  background-color: #333;
+  text-decoration: none;
 }
 
 @font-face {
@@ -339,6 +434,10 @@ svg:not(:root) {
   line-height: 1.5;
   padding-right: 16px;
 }
+.discount_link:hover {
+  color: #232323;
+  text-decoration: none;
+}
 
 .authorization_link {
   font-family: "Cabin";
@@ -346,6 +445,10 @@ svg:not(:root) {
   font-size: 15px;
   line-height: 1.5;
   color: #232323;
+}
+.authorization_link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 .authorization_link:after {
   content: "";
@@ -364,7 +467,6 @@ svg:not(:root) {
 }
 
 .authorization_dropdown {
-  padding: 8px 16px;
   border: 1px solid #c9c9c9;
   border-radius: 0;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.09);
@@ -383,6 +485,9 @@ svg:not(:root) {
 .authorization_dropdown .authorization_dropdown_List ul li a {
   color: inherit;
   display: block;
+}
+.authorization_dropdown .authorization_dropdown_List ul li a:hover {
+  text-decoration: none;
 }
 .authorization_dropdown .authorization_dropdown_List ul li:hover {
   color: black;
@@ -413,7 +518,7 @@ svg:not(:root) {
   font-size: inherit;
 }
 
-.bottomHeader_menu_item {
+.bottomHeader_menu_item a {
   color: #232323;
   font-family: "Cabin";
   font-weight: 500;
@@ -427,30 +532,33 @@ svg:not(:root) {
 }
 
 .navColumn .desctop_navigation_columnHeader {
+  display: block;
   color: #232323;
-  font-family: "Cabin";
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 1px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
   text-transform: uppercase;
   text-align: right;
+  padding-right: 32px;
+  margin: 10px 0;
 }
 .navColumn .desctop_navigation_textWrapper .desctop_navigation_navWrapper a {
   color: #232323;
   font-family: "Cabin";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.5;
-  letter-spacing: 0.5px;
-  font-size: 13px;
+  letter-spacing: 0.25px;
+  font-size: 12px;
   text-align: right;
 }
 .navColumn .desctop_navigation_textWrapper .desctop_navigation_navWrapper a .desctop_navigation_navBadge {
   color: #232323;
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 16px;
-  letter-spacing: 0.5px;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -473,4 +581,31 @@ svg:not(:root) {
   font-size: 14px;
   line-height: 1.5;
   text-decoration: underline;
+}
+
+.image-gallery .image-gallery-section .image-gallery-section-title {
+  color: #232323;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+.image-gallery .image-gallery-section .image-gallery-section-description {
+  color: #232323;
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  white-space: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.image-gallery .image-gallery-section .image-gallery-section-button a {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 48px;
 }

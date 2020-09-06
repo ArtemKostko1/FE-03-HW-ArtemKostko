@@ -15,6 +15,10 @@
       flex: 1;
       align-items: center;
       padding-left: 24px;
+
+      a:hover {
+        text-decoration: none;
+      }
     }
 
     .topHeader2 {
@@ -88,6 +92,7 @@
               left: 0;
               width: 200px;
               height: auto;
+              padding: 8px 16px;
               padding-top: 4px;
               padding-bottom: 4px;
               z-index: 5;
@@ -97,6 +102,7 @@
 
                 .list {
                   padding-top: 8px;
+                  margin: 0;
                 }
               }
             }
@@ -137,7 +143,7 @@
       justify-content: center;
       opacity: 1;
 
-      .bottomHeader_menu_item {
+      .bottomHeader_menu_item > a {
         display: block;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -148,23 +154,28 @@
 
         &:hover {
           border-bottom: 1px solid #232323;
+          text-decoration: none;
         }
+      }
+
+      .bottomHeader_menu_item:hover .desctopNavigationContainer {
+        visibility: visible;
       }
 
       .desctopNavigationContainer {
         visibility: hidden;
-        position: fixed;
-        flex-grow: 1;
         display: block;
-        height: 454px;
+        flex-grow: 1;
+        position: fixed;
+        height: 475px;
         width: 100%;
         opacity: 1;
-        position: fixed;
         background-color: #fff;
         left: 0;
         top: 107px;
-        overflow: hidden;
         text-align: left;
+        overflow: hidden;
+        z-index: 5;
 
         .desctopNav {
           display: block;
@@ -173,7 +184,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 24px;
+            padding: 20px 24px;
             margin: 0 auto;
             max-width: 980px;
 
@@ -199,6 +210,10 @@
                     margin: 0;
                     padding: 8px 0;
 
+                    &:hover {
+                      text-decoration: underline;
+                    }
+
                     .desctop_navigation_navBadge {
                       display: inline-block;
                       position: relative;
@@ -209,6 +224,7 @@
                 }
               }
             }
+
             .desctop_navigation_imageArea {
               display: flex;
               justify-content: left;
@@ -239,8 +255,94 @@
           }
         }
       }
-      .bottomHeader_menu_item:hover ~ .desctopNavigationContainer {
-        visibility: visible;
+    }
+  }
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  .mainContentContainer {
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    flex-grow: 2;
+    min-height: 100vh;
+
+    .mainContent {
+      flex: 1 1;
+
+      .homePage {
+        max-width: 1440px;
+        margin: auto;
+
+        .corousel_wrapper {
+          margin: 16px 128px 32px 128px;
+
+          .carousel {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+
+        .gallery {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .image-gallery {
+            position: relative;
+            padding: 0px 0px 32px;
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+
+            .image-gallery-section {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              margin: 0 auto;
+              left: 0;
+              right: 0;
+              text-align: center;
+
+              .image-gallery-section-description {
+                margin: 8px auto 4px;
+              }
+
+              .image-gallery-section-button {
+                padding: 16px 0 0;
+                white-space: normal;
+                text-align: center;
+
+                a {
+                  display: inline-block;
+                  width: auto;
+                  height: 48px;
+                  margin-right: 0;
+                  background-color: #232323;
+                  color: #f4f4f4;
+                  border: 1px solid transparent;
+                  padding: 0 24px;
+
+                  &:hover {
+                    background-color: #333;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

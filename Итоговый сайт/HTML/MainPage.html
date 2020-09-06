@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bonobos Men's Clothing</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="../CSS/MainStyles.css">
   <link rel="stylesheet" href="../../../Font-Awesome/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <header class="main_header">
@@ -69,12 +72,12 @@
           <div class="authorization_Container">
             <div class="authorization account_tooltip">
               <button aria-label="Open Sign In Dropdown" class="authorization_button">
-                <a href="#" class="authorization_link" tabindex="-1">Sign In</a>
+                <a href="#" class="authorization_link">Sign In</a>
               </button>
             </div>
             <div class="authorization_dropdown">
               <div class="authorization_dropdown_List">
-                <ul class="component list-component list">
+                <ul class="componen list-component list">
                   <li>
                     <a href="#">Help</a>
                   </li>
@@ -113,106 +116,875 @@
 
   <div class="bottomHeader_wrapper">
     <div class="bottomHeader_navigationContainer">
-      <a href="#" class="bottomHeader_menu_item">New</a>
-      <a href="#" class="bottomHeader_menu_item">Summer Features</a>
-      <a href="#" class="bottomHeader_menu_item">Clothing</a>
-      <a href="#" class="bottomHeader_menu_item">Pants & Jeans</a>
-      <a href="#" class="bottomHeader_menu_item">Shorts & Swim</a>
-      <a href="#" class="bottomHeader_menu_item">Shirts</a>
-      <a href="#" class="bottomHeader_menu_item">Suits & Bleazers</a>
-      <a href="#" class="bottomHeader_menu_item">Golf</a>
-      <a href="#" class="bottomHeader_menu_item">Sale</a>
+      <div class="bottomHeader_menu_item">
+        <a href="#">New</a>
 
-      <div class="desctopNavigationContainer">
-        <div class="desctopNav">
-          <div class="desktop-navigation-component desktop_navigation">
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
 
-            <div class="navColumn">
-              <a href="#">
-                <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All New</h3>
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All New</h3>
+                </a>
+
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shirts</a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Pants</a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shorts</a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tees, Henleys, Polos</a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Underwear</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Featured</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Face Masks
+                      <div class="desctop_navigation_navBadge">NEW</div>
+                    </a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">The Streach Shop
+                      <div class="desctop_navigation_navBadge">NEW</div>
+                    </a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Summer Colors</a>
+                  </div>
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Celebrate Pride</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/4MXnYK37JGDQa0EtvXrQDu/97be40ec18f008b74fbd5c9f39560776/masks_Nav_tile.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Order Your Mask Now" aria-label="Order Your Mask Now" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Just Dropped: Riviera Face Masks</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/1UIA7Koip787r99MyiJjwP/abbc35b3889dee7ddabe8661eea09b67/Web_-_Nav_Tile_-_Editorial.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="off duty pant" aria-label="off duty pant" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Indoor Comfort, Outdoor Style</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop The Off Duty Pant</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Summer Features</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Summer Features</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Face Masks
+                      <div class="desctop_navigation_navBadge">NEW</div>
+                    </a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">The Streach Shop
+                      <div class="desctop_navigation_navBadge">NEW</div>
+                    </a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Remote Life Bundles</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Summer Colors</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Line & Lightweight Shop</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Easy Care & Tech</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Chino Guide</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Best Sellers</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Everyday Bundles</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/4MXnYK37JGDQa0EtvXrQDu/97be40ec18f008b74fbd5c9f39560776/masks_Nav_tile.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Order Your Mask Now" aria-label="Order Your Mask Now" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Just Dropped: Riviera Face Masks</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/5C3UlYyt4pLVl5mbOhKmPi/7e0066bc4a5f3addaa1d482e8a47af9b/fsos_homepage_tilesNav_tile.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="shop stretch products" aria-label="shop stretch products" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Breathable Fits Won’t Let You Down</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop The Easy Care &amp; Tech Collection</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Clothing</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All Clothing</h3>
+                </a>
+
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Pants & Jeans</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shorts & Swim</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">T-Shirts, Henleys, & Polos</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Sweaters & Sweatshirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Loungewear</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Outerwear</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Face Masks
+                      <div class="desctop_navigation_navBadge">NEW</div>
+                    </a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Socks & Underwear</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Accessories</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Gift Cards</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All Extended Sizes</h3>
+                </a>
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Pants & Jeans</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shorts & Swim</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Suits & Blazers</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Sweaters & Polos</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/7GdhftbCoeRIIh9Wzjp94N/21da62c8169af0b9ac7d423d10473878/60_OFF_-_Nav_Tile_Desktop_-_Launch.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="extra 50% off sale and final sale with code epicsale"
+                          aria-label="extra 50% off sale and final sale with code epicsale" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Pants & Jeans</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All Pants &amp; Jeans
+                  </h3>
+                </a>
+
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Chinos & Casual Pants</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Dress Pants</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Jeans</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Pants</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Pants in Extended Sizes</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Chino Guide</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop by Fit</h3>
+                </a>
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Skinny Fit</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tailored Fit</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Slim Fit</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Straight Fit</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Athletic Fit</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Fit Guide</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/2RWwMK9o0X8QQH0QUFvhUA/040d269aae1cc52d6c992be9d8384cba/Tech-chino-nav-tile.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="breathable and sweat wicking. liquid, dirt, and stain repellent. secure pocket for keys and wallet. comfortable stretch. shop tech chinos"
+                          aria-label="breathable and sweat wicking. liquid, dirt, and stain repellent. secure pocket for keys and wallet. comfortable stretch. shop tech chinos"
+                          height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">The Pants You Need This Summer</a>
+                  <div>
+                    <a class="desctop_navigation_imageTextSecond" href="#">Shop Tech Chinos</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/12AaN0hRP4kirlamYMfgwK/6298983741a497f0318c00473b51a4ef/Web_-_Nav_Tile_-_Educational.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="off duty pant" aria-label="off duty pant" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">The Sweet Spot Between Chinos &amp; Joggers</a>
+                  <div>
+                    <a class="desctop_navigation_imageTextSecond" href="#">Shop The Off Duty Pant</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Shorts & Swim</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Shop All Shorts & Swim</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Chino Shorts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tech & Sweat Shorts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Limited Edition Shorts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Swim Trunks</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Shorts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shorts & Swim in Extended Sizes</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/3NAX2SJ6QozNKdoioA09QQ/d76beaf4cdf46006e2b9d534ec429c2a/shorts_nav-anywhere-short.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Shorts to Wear at Home, or Anywhere. Shop the Anywhere Shorts"
+                          aria-label="Shorts to Wear at Home, or Anywhere. Shop the Anywhere Shorts" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Shorts to Wear at Home, or Anywhere</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop the Anywhere Shorts</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/1QTTUEJ679ZioouorZJmRy/a659b6cc31984780f218fc1bfe712e13/Nav_Tile_Shorts___Swim.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="shop new shorts and swim" aria-label="shop new shorts and swim" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Heat-Beaters Fresh Out of the Oven</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Swim</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Shirts</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Shop All Shirts</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Short Sleeve Sirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Lightweight Casual Shirt</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Casual Shirt</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Business Casual Shirt</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Dress Shirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">T-Shirts, Henleys, & Polos</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Sweaters &amp; Sweatshirts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Shirts in Extended Sizes</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Polos in Extended Sizes</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/44dU9EuWJuTdEZEevYTagE/9fff1aac137992772ee436169fbf27bf/may_riviera_archive_nav.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Blasts from the Past: Riviera Short Sleeve Shirts. Shop Popular Prints from the Archives"
+                          aria-label="Blasts from the Past: Riviera Short Sleeve Shirts. Shop Popular Prints from the Archives"
+                          height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Just Reissued: 6 Popular Prints from the
+                    Archives</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/4MrZBWkaSuBzuTHoQxLGyk/ee12f8075f245c0fd94dbdcdd0484a9b/PERFORMANCE_-_NAV_TILE_-_LINEN.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Shop lightweight button down shirts" aria-label="Shop lightweight button down shirts"
+                          height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Lightweight Shirts in 25+ Prints &amp;
+                    Patterns</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Up to 3 Fits &amp; 3 Lengths</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Suits & Bleazers</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Shop All Suits & Blazers</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Suits</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Blazers & Sports Coats</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tuxedos</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Black Tie & Formal</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Suits & Blazers in Extended Sizes</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Wedding Shop</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/2mWyyoJaofQNadAIkgfVrS/430f12cc772fca8556fdd4d7df78e595/suits_nav-uncon-blazers.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="A Lighter Way to Look Sharp Shop the Unconstructed Blazer"
+                          aria-label="A Lighter Way to Look Sharp Shop the Unconstructed Blazer" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">A Lighter Way to Look Sharp</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop the Unconstructed Blazer</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/38LPTFHyv4GxYzXbhpJ72u/c8109574945361e1af921e29298bc02e/suits_nav-short-suit.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Introducing the Short Suit for Summer Shop Now"
+                          aria-label="Introducing the Short Suit for Summer Shop Now" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Introducing the Short Suit for Summer</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Golf</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <h3 class="desctop_navigation_columnHeader">Shop All Golf</h3>
+                <div class="desctop_navigation_textWrapper">
+
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Tops</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Shorts</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Pants</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf Accessories</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf in Extended Sizes</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Justin's Bonobos Picks</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/5sUSED6lbntnSdUJ93jfbr/95ecc0251e548df8fb2da5ddbc06d1d1/june-golf-NAV.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Justin Rose swinging a golf club wearing a Bonobos shirt"
+                          aria-label="Justin Rose swinging a golf club wearing a Bonobos shirt" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Justin Rose's Winning Picks</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/WdKTppMkdQzDAvmBjEIe5/7465b0fd0933afb2bd476e9a1c926e9f/golf_nav-golf-tops.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="Performance Golf Polos in Up to 2 Fits Shop Now"
+                          aria-label="Performance Golf Polos in Up to 2 Fits Shop Now" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Performance Golf Polos in Up to 2 Fits</a>
+                  <div>
+                    <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomHeader_menu_item">
+        <a href="#">Sale</a>
+
+        <div class="desctopNavigationContainer">
+          <div class="desctopNav">
+            <div class="desktop-navigation-component desktop_navigation">
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop All Sale
+                  </h3>
+                </a>
+
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">New Sale Added</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tops</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Bottoms</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Suits & Blazers</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Outerwear</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Accessories</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Extended Sizes</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navColumn">
+                <a href="#">
+                  <h3 class="desctop_navigation_columnHeader desctop_navigation_linkText">Shop all Final Sale</h3>
+                </a>
+                <div class="desctop_navigation_textWrapper">
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">50% Off & Up</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Tops</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Bottoms</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Suits & Blazers</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Outerwear</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Golf</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Accessories</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Extended Sizes</a>
+                  </div>
+                  <div class="desctop_navigation_navWrapper">
+                    <a href="#">Womens</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/1tB8E5MW6n8mItrbTQXCVZ/19102c9e1e25c7f43fb72ef5d7977347/sale_nav-new-to-sale.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="shop sale" aria-label="shop sale" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Shop All Sale</a>
+                </div>
+              </div>
+
+              <div class="image-area desctop_navigation_imageArea">
+                <div class="desctop_navigation_imageWrapper">
+                  <div class="component image-component image_component">
+                    <a href="#">
+                      <div>
+                        <img class="component img-component img"
+                          src="https://bonobos-contentful.imgix.net/1zbm708fksg8/2VmM2eZJ48Hs8DJziMGxaI/63ba264d0d7f3a57dba57cbb00a80964/60_OFF_-_Nav_Tile_Desktop_-_Launch.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
+                          alt="take an extra 50% off sale and final sale with code epic sale"
+                          aria-label="take an extra 50% off sale and final sale with code epic sale" height="350">
+                      </div>
+                    </a>
+                  </div>
+
+                  <a href="#" class="desctop_navigation_imageTextFirst">Extra 60% Off Final Sale For Savings Up to
+                    80%</a>
+                  <div>
+                    <a class="desctop_navigation_imageTextSecond" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="pageContent">
+    <div class="mainContentContainer">
+      <div class="mainContent">
+        <div class="homePage">
+          <div class="corousel_wrapper">
+            <div class="carousel slide" data-ride="carousel" id="myCarousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img style="width: 100%;"
+                    src="https://bonobos-contentful.imgix.net/1zbm708fksg8/2U5YG0tQU8IEUPs4k7wG1p/56ba966232e40776d8ac9caf67aa06bc/WAREHOUSE_SALE_HP_TOP_HERO_BANNER_LEGALV2.jpg?auto=format%2Ccompress&fit=clip&ixlib=react-8.6.1&h=1&w=1280"
+                    alt="1">
+                </div>
+                <div class="item">
+                  <img style="width: 100%;"
+                    src="https://bonobos-contentful.imgix.net/1zbm708fksg8/1JBzLiOxMVQP0dasQhwYtk/fa093d4f5f14bb6aea2fbc5f8e0b01c0/Warehouse_Sale_Phase2_Desktop_HP_Top_Banner.jpg?auto=format%2Ccompress&fit=clip&ixlib=react-8.6.1&h=1&w=1280"
+                    alt="2">
+                </div>
+              </div>
+              <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
               </a>
-
-              <div class="desctop_navigation_textWrapper">
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Shirts</a>
-                </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Pants</a>
-                </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Shorts</a>
-                </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Tees, Henleys, Polos</a>
-                </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Underwear</a>
-                </div>
-              </div>
+              <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
+          </div>
 
-            <div class="navColumn">
-              <h3 class="desctop_navigation_columnHeader">Featured</h3>
-              <div class="desctop_navigation_textWrapper">
+          <div class="gallery">
+            <div class="image-gallery">
+              <img
+                src="https://bonobos-contentful.imgix.net/1zbm708fksg8/68V3qJBxRViUgFXoXgX2Df/873881fc479b4cb105135ca7898faa6d/Knit_Rivieras_Homepage_Hero.jpg?auto=format%2Ccompress&fit=clip&ixlib=react-8.6.1&h=1&w=1280"
+                alt="Image of several new Riviera Shirts">
 
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Face Masks
-                    <div class="desctop_navigation_navBadge">NEW</div>
-                  </a>
+              <div class="image-gallery-section">
+                <div class="image-gallery-section-title">
+                  The Fall Prints
                 </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">The Streach Shop
-                    <div class="desctop_navigation_navBadge">NEW</div>
-                  </a>
+                <div class="image-gallery-section-description">
+                  New season, new soon-to-be famous prints.
                 </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Summer colors</a>
-                </div>
-
-                <div class="desctop_navigation_navWrapper">
-                  <a href="#">Celebrate Pride</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="image-area desctop_navigation_imageArea">
-              <div class="desctop_navigation_imageWrapper">
-                <div class="component image-component image_component">
-                  <a href="#">
-                    <div>
-                      <img class="component img-component img"
-                        src="https://bonobos-contentful.imgix.net/1zbm708fksg8/4MXnYK37JGDQa0EtvXrQDu/97be40ec18f008b74fbd5c9f39560776/masks_Nav_tile.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
-                        alt="Order Your Mask Now" aria-label="Order Your Mask Now" height="350">
-                    </div>
-                  </a>
-                </div>
-
-                <a href="#" class="desctop_navigation_imageTextFirst">Just Dropped: Riviera Face Masks</a>
-                <div>
-                  <a href="#" class="desctop_navigation_imageTextSecond">Shop Now</a>
-                </div>
-              </div>
-
-              <div class="desctop_navigation_imageWrapper">
-                <div class="component image-component image_component">
-                  <a href="#">
-                    <div>
-                      <img class="component img-component img"
-                        src="https://bonobos-contentful.imgix.net/1zbm708fksg8/1UIA7Koip787r99MyiJjwP/abbc35b3889dee7ddabe8661eea09b67/Web_-_Nav_Tile_-_Editorial.jpg?auto=format%2Ccompress&q=75&fit=clip&ixlib=react-8.6.1&h=350&dpr=1"
-                        alt="off duty pant" aria-label="off duty pant" height="350">
-                    </div>
-                  </a>
-                </div>
-
-                <a href="#" class="desctop_navigation_imageTextFirst">Indoor Comfort, Outdoor Style</a>
-                <div>
-                  <a href="#" class="desctop_navigation_imageTextSecond">Shop The Off Duty Pant</a>
+                <div class="image-gallery-section-button">
+                  <a href="#">SHOP RIVIERA SHIRTS</a>
                 </div>
               </div>
             </div>
@@ -221,9 +993,6 @@
       </div>
     </div>
   </div>
-</header>
-
-<body>
 </body>
 
 </html>
