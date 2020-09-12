@@ -271,13 +271,53 @@
   }
 }
 
-.main_footer{
-  .footer-companent{
-    background-color: #232323;
-    .footer_socialIcon{
-      cursor: pointer;
-      font-size: 20px;
-      color: #707070;
+.main_footer {
+  .footer-component {
+    background-color: green;
+
+    .footer_social {
+      .footer_socialIcon {
+        cursor: pointer;
+        font-size: 20px;
+        color: #707070;
+
+        .svg-inline--fa {
+          font-size: 22px;
+          font-size: inherit;
+        }
+      }
+
+      .footer_Blog {
+        .footer_blogTitle {
+          font-family: "Cabin";
+          font-style: normal;
+          font-size: 14px;
+          line-height: 1.5;
+          text-transform: uppercase;
+          color: #f4f4f4;
+          margin: 8px 0;
+          font-weight: 800;
+        }
+
+        .footer_blogDescription {
+          font-family: "Cabin";
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          color: #c9c9c9;
+          line-height: 1.5;
+        }
+
+        .footer_blogLink {
+          font-family: "Cabin";
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1.5;
+          margin-top: 8px;
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

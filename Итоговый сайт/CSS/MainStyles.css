@@ -370,6 +370,50 @@ h3 {
   text-decoration: none;
 }
 
+.main_footer .footer-component {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  left: 0;
+  min-height: 350px;
+  border-top: 1px solid transparent;
+  padding: 48px 32px;
+  overflow: hidden;
+}
+.main_footer .footer-component .footer_social {
+  width: 33%;
+}
+.main_footer .footer-component .footer_social .footer_socialIcons {
+  padding-bottom: 16px;
+}
+.main_footer .footer-component .footer_social .footer_socialIcons .footer_socialIcon {
+  display: inline-block;
+}
+.main_footer .footer-component .footer_social .footer_socialIcons .footer_socialIcon .svg-inline--fa {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  text-align: center;
+}
+.main_footer .footer-component .footer_social .footer_Blog {
+  display: flex;
+  flex-direction: row;
+  padding-right: 32px;
+}
+.main_footer .footer-component .footer_social .footer_Blog .footer_blogImage {
+  display: block;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+.main_footer .footer-component .footer_social .footer_Blog .footer_blogDescription {
+  margin-bottom: 8px;
+}
+
 @font-face {
   font-family: "Cabin", sans-serif;
   src: url("fonts/Cabin.ttf");
@@ -608,4 +652,44 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 48px;
+}
+
+.main_footer .footer-component {
+  background-color: #232323;
+}
+.main_footer .footer-component .footer_social .footer_socialIcon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #707070;
+}
+.main_footer .footer-component .footer_social .footer_socialIcon .svg-inline--fa {
+  font-size: 22px;
+  font-size: inherit;
+}
+.main_footer .footer-component .footer_social .footer_Blog .footer_blogTitle {
+  font-family: "Cabin";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  margin: 8px 0;
+  font-weight: 800;
+}
+.main_footer .footer-component .footer_social .footer_Blog .footer_blogDescription {
+  font-family: "Cabin";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #c9c9c9;
+  line-height: 1.5;
+}
+.main_footer .footer-component .footer_social .footer_Blog .footer_blogLink {
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 8px;
+  color: #fff;
+  text-decoration: underline;
 }
