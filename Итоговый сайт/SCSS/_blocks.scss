@@ -360,7 +360,9 @@
     padding: 48px 32px;
     overflow: hidden;
 
-    .footer_social {
+    .footer_social,
+    .footer_links,
+    .footer_email {
       width: 33%;
 
       .footer_socialIcons {
@@ -395,6 +397,68 @@
 
         .footer_blogDescription {
           margin-bottom: 8px;
+        }
+      }
+    }
+
+    .footer_links {
+      display: flex;
+      flex-direction: row;
+
+      .footer_linkRow {
+        display: flex;
+        flex-direction: column;
+
+        .footer_link {
+          margin: 8px 0;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .footer_email {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .email_form_component {
+        margin-bottom: 16px;
+
+        .email_form_title {
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        .email_form_description {
+          margin: 0 0 16px;
+        }
+
+        .email_form_formWrapper {
+          position: relative;
+
+          .email_form_form {
+            display: flex;
+
+            .input_label_component {
+              display: relative;
+              padding: 8px 0;
+              width: 100%;
+
+              .input_label_label {
+                display: block;
+                position: absolute;
+                margin: 0 10px 5px 0;
+                padding: 18px 0 0 12px;
+                transition: all 0.1s ease-in-out;
+
+                .input_inputWrapper {
+                }
+              }
+            }
+          }
         }
       }
     }

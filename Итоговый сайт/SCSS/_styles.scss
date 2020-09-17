@@ -319,5 +319,76 @@
         }
       }
     }
+
+    .footer_link {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 700;
+      text-transform: capitalize;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #f4f4f4;
+    }
+
+    .email_form_component {
+      color: #f4f4f4;
+
+      .email_form_title {
+        font-family: "Cabin";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      .email_form_description {
+        font-family: "Cabin";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .email_form_formWrapper {
+        display: inline-block;
+        font-family: "Cabin";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #232323;
+
+        .email_form_form {
+          font-family: "Cabin";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #707070;
+          cursor: text;
+
+          .input_label_component {
+            display: inline-block;
+            font-family: "Cabin";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.5;
+            text-transform: none;
+            color: #232323;
+
+            .input_inputWrapper {
+              display: inline-block;
+              font-family: "Cabin";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.5;
+              text-transform: none;
+              color: #232323;
+            }
+          }
+        }
+      }
+    }
   }
 }
