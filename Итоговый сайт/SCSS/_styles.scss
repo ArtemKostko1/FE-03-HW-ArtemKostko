@@ -358,14 +358,6 @@
         color: #232323;
 
         .email_form_form {
-          font-family: "Cabin";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 1.5;
-          color: #707070;
-          cursor: text;
-
           .input_label_component {
             display: inline-block;
             font-family: "Cabin";
@@ -376,18 +368,41 @@
             text-transform: none;
             color: #232323;
 
-            .input_inputWrapper {
-              display: inline-block;
+            .input_label_label{
+              display: block;
               font-family: "Cabin";
               font-style: normal;
               font-weight: 400;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 1.5;
               text-transform: none;
+              color: #707070;
+              cursor: text;
+
+            .input_input{
+              font-family: "Cabin";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 1.5;   
               color: #232323;
             }
           }
         }
+
+        .email_form_buttonContainer{
+          .email_form_button{
+            color: #fff;
+            border: 1px solid transparent;
+            background: #4c4c4c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: capitalize;
+          }
+        }
+      }
       }
     }
   }

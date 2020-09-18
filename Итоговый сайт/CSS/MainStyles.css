@@ -464,8 +464,8 @@ h3 {
 }
 .main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .input_label_component {
   display: relative;
-  padding: 8px 0;
   width: 100%;
+  padding: 8px 0;
 }
 .main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_label_label {
   display: block;
@@ -474,6 +474,39 @@ h3 {
   padding: 18px 0 0 12px;
   transition: all 0.1s ease-in-out;
 }
+.main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_inputWrapper input {
+  height: 56px;
+  width: 100%;
+  overflow: visible;
+}
+.main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_inputWrapper input .input_input {
+  width: 100%;
+  padding-left: 10px;
+  border: 1px solid #c9c9c9;
+}
+.main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .email_form_buttonContainer {
+  display: flex;
+  width: 60px;
+  margin-left: -4px;
+  padding: 8px 0;
+}
+.main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .email_form_buttonContainer .email_form_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  height: 56px;
+  width: 100%;
+  line-height: 56px;
+  padding: 0 24px;
+}
+.main_footer .footer-component .footer_email .email_form_component .email_form_formWrapper .email_form_form .email_form_buttonContainer .email_form_button .svg-inline--fa {
+  display: inline-block;
+  width: 0.75em;
+  vertical-align: -125em;
+}
+
 @font-face {
   font-family: "Cabin", sans-serif;
   src: url("fonts/Cabin.ttf");
@@ -787,15 +820,6 @@ h3 {
   line-height: 1.5;
   color: #232323;
 }
-.main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form {
-  font-family: "Cabin";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #707070;
-  cursor: text;
-}
 .main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form .input_label_component {
   display: inline-block;
   font-family: "Cabin";
@@ -806,13 +830,32 @@ h3 {
   text-transform: none;
   color: #232323;
 }
-.main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_inputWrapper {
-  display: inline-block;
+.main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_label_label {
+  display: block;
   font-family: "Cabin";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: none;
+  color: #707070;
+  cursor: text;
+}
+.main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form .input_label_component .input_label_label .input_input {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   color: #232323;
+}
+.main_footer .footer-component .email_form_component .email_form_formWrapper .email_form_form .email_form_buttonContainer .email_form_button {
+  color: #fff;
+  border: 1px solid transparent;
+  background: #4c4c4c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: capitalize;
 }
